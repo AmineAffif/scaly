@@ -2,7 +2,7 @@
 
 > Document vivant. Décisions 🤖 = mes arbitrages sur ce qu'Amine m'a délégué.
 >
-> Statut global : **✅ V1 complète et vérifiée sur `refonte-landing`, en attente de ta revue**
+> Statut global : **🚀 EN PROD, mergé sur main et déployé sur Vercel le 2026-08-02**
 
 ---
 
@@ -84,7 +84,7 @@
 
 ### Phase 4 : QA ✅ (reste ta revue)
 - [x] Screenshots Playwright de chaque section
-- [ ] Revue Amine → push main sur GO
+- [x] Revue Amine OK → mergé et déployé
 
 ## 5. Journal
 
@@ -94,3 +94,5 @@
 | 2026-08-02 | Next 14.2.3 → 15.5.22 (CVE Vercel), fix type préexistant number-ticker, GSAP + Lenis installés |
 | 2026-08-02 | Landing refondue : 12 sections galerie éditoriale, copy complet, 6 images galerie locales (picsum) |
 | 2026-08-02 | QA Playwright : hero pixelisé→net OK, slider auto OK, zoom pinné OK, 0 erreur console, 0 overflow. Build prod OK |
+| 2026-08-02 | Retours Amine : hero refondu (avant/après en pièce maîtresse), galerie picsum supprimée, curseur sans label. React 18→19 (réparait « Invalid hook call » sur /users/register) |
+| 2026-08-02 | Push main. Deploy 1 : fichiers pnpm parasites purgés avant push. Deploy 2 : échec peer deps (lucide-react pinnait react 18) → lucide à jour + .npmrc legacy-peer-deps + 12 anciens composants orphelins supprimés → **Ready en prod** |
