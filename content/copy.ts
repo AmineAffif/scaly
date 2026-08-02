@@ -16,7 +16,7 @@ export const copy = {
   },
 
   hero: {
-    kicker: "fig. 01 · agrandissement par ia",
+    kicker: "fig. 01 · la preuve, tout de suite",
     titleLines: ["Vos images méritent", "chaque pixel."],
     subtitle:
       "Scaly agrandit et restaure vos images par IA : jusqu'à 4× la résolution d'origine, sans perte visible, prêtes pour l'impression comme pour la vente.",
@@ -25,27 +25,8 @@ export const copy = {
     cartel: "512 × 512 → 2 048 × 2 048 · détail reconstruit par IA",
   },
 
-  marquee: {
-    caption: "galerie · images traitées par scaly",
-    items: [
-      { src: "/gallery/g1015.jpg", label: "paysage · ×4" },
-      { src: "/gallery/g1025.jpg", label: "portrait animalier · ×4" },
-      { src: "/gallery/g1080.jpg", label: "photo produit · ×2" },
-      { src: "/gallery/g1043.jpg", label: "architecture · ×4" },
-      { src: "/gallery/g292.jpg", label: "nature morte · ×2" },
-      { src: "/gallery/g429.jpg", label: "photo de rue · ×4" },
-    ],
-  },
-
-  diptych: {
-    number: "02",
-    title: "Avant. Après.",
-    body: "Aucune retouche manuelle : l'image de gauche est l'originale, celle de droite est sortie de Scaly telle quelle. Déplacez le curseur, jugez sur pièce.",
-    cartel: "fig. 02 · même fichier, résolution ×4",
-  },
-
   zoom: {
-    number: "03",
+    number: "02",
     title: "Le grain devient détail.",
     captions: [
       "vue d'ensemble · 100 %",
@@ -55,7 +36,7 @@ export const copy = {
   },
 
   how: {
-    number: "04",
+    number: "03",
     title: "Trois gestes, pas plus.",
     steps: [
       {
@@ -74,32 +55,29 @@ export const copy = {
   },
 
   useCases: {
-    number: "05",
+    number: "04",
     title: "Pensé pour ceux qui vivent de l'image.",
     cases: [
       {
         kicker: "créatifs & photographes",
         title: "Imprimez en grand",
         body: "Un tirage 60×90 à partir d'un fichier de 2 Mpx ? C'est exactement le travail de Scaly : agrandir sans dénaturer, préserver le grain là où il fait la photo.",
-        img: "/gallery/g1015.jpg",
       },
       {
         kicker: "e-commerce",
         title: "Des fiches produit qui vendent",
         body: "Les photos fournisseur trop petites deviennent des visuels nets, zoomables, aux standards des marketplaces. Par lot, en quelques minutes.",
-        img: "/gallery/g1080.jpg",
       },
       {
         kicker: "souvenirs",
         title: "Ressuscitez vos archives",
         body: "Scans de vieilles photos, images floues d'anciens téléphones : Scaly restaure les visages et les détails que vous pensiez perdus.",
-        img: "/gallery/g1025.jpg",
       },
     ],
   },
 
   stats: {
-    number: "06",
+    number: "05",
     items: [
       { value: 4, prefix: "×", label: "résolution maximale" },
       { value: 380000, suffix: "+", label: "images traitées" },
@@ -109,7 +87,7 @@ export const copy = {
   },
 
   pricing: {
-    number: "07",
+    number: "06",
     title: "Commencez gratuitement.",
     subtitle: "Passez au plan supérieur quand vos images le demandent.",
     plans: [
@@ -159,7 +137,7 @@ export const copy = {
   },
 
   reviews: {
-    number: "08",
+    number: "07",
     title: "Ils ont jugé sur pièce.",
     items: [
       {
@@ -196,7 +174,7 @@ export const copy = {
   },
 
   faq: {
-    number: "09",
+    number: "08",
     title: "Les questions qu'on nous pose.",
     items: [
       {

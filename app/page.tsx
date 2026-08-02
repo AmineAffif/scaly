@@ -1,8 +1,6 @@
 import LandingShell from "components/landing/LandingShell";
 import EditorialHeader from "components/landing/EditorialHeader";
 import Hero from "components/landing/Hero";
-import GalleryMarquee from "components/landing/GalleryMarquee";
-import Diptych from "components/landing/Diptych";
 import ZoomDetail from "components/landing/ZoomDetail";
 import HowItWorks from "components/landing/HowItWorks";
 import UseCases from "components/landing/UseCases";
@@ -18,8 +16,6 @@ export default function LandingPage() {
       <EditorialHeader />
       <main className="overflow-x-clip bg-white">
         <Hero />
-        <GalleryMarquee />
-        <Diptych />
         <ZoomDetail />
         <HowItWorks />
         <UseCases />

@@ -58,7 +58,6 @@ export default function FinalCta() {
         <div className="final-reveal mt-10">
           <Link
             href="/users/register"
-            data-cursor="go"
             className="inline-block bg-[#5199ec] px-10 py-4 text-sm font-medium text-white transition-colors hover:bg-[#3d87e0]"
           >
             {copy.finalCta.cta}

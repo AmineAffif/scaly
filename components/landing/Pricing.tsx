@@ -39,21 +39,21 @@ export default function Pricing() {
             <div
               key={plan.name}
               className={`plan-card flex flex-col px-0 py-2 md:px-10 md:first:pl-0 md:last:pr-0 ${
-                plan.popular ? "relative" : ""
+                "popular" in plan ? "relative" : ""
               }`}
             >
               <div className="flex items-center justify-between">
                 <h3 className="font-display text-3xl text-gray-900">
                   {plan.name}
                 </h3>
-                {plan.popular && (
+                {"popular" in plan && (
                   <span className="cartel cartel-accent">recommandé</span>
                 )}
               </div>
               <div className="mt-5 flex items-baseline gap-2">
                 <span
                   className={`font-display text-6xl ${
-                    plan.popular ? "text-[#5199ec]" : "text-gray-900"
+                    "popular" in plan ? "text-[#5199ec]" : "text-gray-900"
                   }`}
                 >
                   {plan.price}
@@ -77,9 +77,8 @@ export default function Pricing() {
               </ul>
               <Link
                 href="/users/register"
-                data-cursor="go"
                 className={`mt-8 px-6 py-3.5 text-center text-sm font-medium transition-colors ${
-                  plan.popular
+                  "popular" in plan
                     ? "bg-[#5199ec] text-white hover:bg-[#3d87e0]"
                     : "border border-gray-300 text-gray-800 hover:border-gray-900"
                 }`}

@@ -5,12 +5,11 @@ import { gsap, useGSAP } from "components/gsap/gsapSetup";
 
 /**
  * Curseur galerie : point bleu discret, s'étend avec un label
- * sur les éléments portant [data-cursor="label"].
+ * sur les éléments portant [].
  */
 export default function EditorialCursor() {
   const ref = useRef<HTMLDivElement>(null);
   const [enabled, setEnabled] = useState(false);
-  const [label, setLabel] = useState("");
 
   useEffect(() => {
     setEnabled(window.matchMedia("(hover: hover) and (pointer: fine)").matches);
@@ -30,14 +29,9 @@ export default function EditorialCursor() {
       };
       const onOver = (e: MouseEvent) => {
         const target = (e.target as HTMLElement).closest<HTMLElement>(
-          "[data-cursor], a, button"
+          "a, button"
         );
-        const text = target?.dataset.cursor ?? "";
-        setLabel(text);
-        gsap.to(ref.current, {
-          scale: target ? (text ? 6 : 2.2) : 1,
-          duration: 0.25,
-        });
+        gsap.to(ref.current, { scale: target ? 2.4 : 1, duration: 0.25 });
       };
 
       window.addEventListener("mousemove", onMove, { passive: true });
@@ -56,11 +50,7 @@ export default function EditorialCursor() {
     <div
       ref={ref}
       aria-hidden
-      className="pointer-events-none fixed left-0 top-0 z-[9999] flex h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[#5199ec]"
-    >
-      <span className="text-[2.5px] font-semibold uppercase tracking-wider text-white">
-        {label}
-      </span>
-    </div>
+      className="pointer-events-none fixed left-0 top-0 z-[9999] h-3.5 w-3.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#5199ec]"
+    />
   );
 }

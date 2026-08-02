@@ -67,7 +67,7 @@ export default function ZoomDetail() {
             <div className="relative aspect-[16/9] overflow-hidden">
               <div className="zoom-img absolute inset-0 origin-center">
                 <Image
-                  src="/gallery/g1043.jpg"
+                  src="/landscape.webp"
                   alt="Zoom dans une image agrandie par Scaly"
                   fill
                   sizes="100vw"
