@@ -1,12 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Instrument_Serif, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-serif-display",
+});
+
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans-body",
+});
 
 export const metadata: Metadata = {
-  title: "Scaly",
-  description: "Améliorez vos images avec Scaly",
+  title: "Scaly | Agrandissez vos images par IA, sans perte",
+  description:
+    "Scaly agrandit et restaure vos images par IA : jusqu'à 4× la résolution d'origine, prêtes pour l'impression comme pour la vente. 10 images offertes.",
 };
 
 export default function RootLayout({
@@ -15,8 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="fr">
+      <body
+        className={`${instrumentSans.variable} ${instrumentSerif.variable} font-body`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

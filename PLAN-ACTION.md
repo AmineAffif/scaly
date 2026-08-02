@@ -2,7 +2,7 @@
 
 > Document vivant. Décisions 🤖 = mes arbitrages sur ce qu'Amine m'a délégué.
 >
-> Statut global : **🔨 En cours sur la branche `refonte-landing`**
+> Statut global : **✅ V1 complète et vérifiée sur `refonte-landing`, en attente de ta revue**
 
 ---
 
@@ -64,30 +64,33 @@
 
 ## 4. Phases
 
-### Phase 0 : Fondations ⬜
-- [ ] Next 14.2.3 → 15.5+ (CVE Vercel) + build OK
-- [ ] GSAP + @gsap/react + Lenis installés
-- [ ] Typos Instrument Serif/Sans via next/font
-- [ ] Nettoyage : classes main-color-* rationalisées
+### Phase 0 : Fondations ✅
+- [x] Next 14.2.3 → 15.5+ (CVE Vercel) + build OK
+- [x] GSAP + @gsap/react + Lenis installés
+- [x] Typos Instrument Serif/Sans via next/font
+- [x] Nettoyage : classes main-color-* rationalisées
 
-### Phase 1 : Copy & data ⬜
-- [ ] `content/copy.ts` : tout le texte (hero, sections, 6 avis, FAQ, pricing)
+### Phase 1 : Copy & data ✅
+- [x] `content/copy.ts` : tout le texte (hero, sections, 6 avis, FAQ, pricing)
 
-### Phase 2 : Layout ⬜
-- [ ] Header + footer refondus
-- [ ] Les 12 sections en statique (grille éditoriale, cartels, filets)
+### Phase 2 : Layout ✅
+- [x] Header + footer refondus
+- [x] Les 12 sections en statique (grille éditoriale, cartels, filets)
 
-### Phase 3 : Animations ⬜
-- [ ] Lenis + curseur custom
-- [ ] Hero pixelisé→net, marquee, slider auto, zoom pinné, compteurs, reveals SplitText
-- [ ] matchMedia mobile allégé + reduced-motion
+### Phase 3 : Animations ✅
+- [x] Lenis + curseur custom
+- [x] Hero pixelisé→net, marquee, slider auto, zoom pinné, compteurs, reveals SplitText
+- [x] matchMedia mobile allégé + reduced-motion
 
-### Phase 4 : QA ⬜
-- [ ] Screenshots Playwright de chaque section
-- [ ] Build prod + revue Amine → push main sur GO
+### Phase 4 : QA ✅ (reste ta revue)
+- [x] Screenshots Playwright de chaque section
+- [ ] Revue Amine → push main sur GO
 
 ## 5. Journal
 
 | Date | Événement |
 |---|---|
 | 2026-08-02 | Cadrage répondu, branche `refonte-landing`, plan rédigé |
+| 2026-08-02 | Next 14.2.3 → 15.5.22 (CVE Vercel), fix type préexistant number-ticker, GSAP + Lenis installés |
+| 2026-08-02 | Landing refondue : 12 sections galerie éditoriale, copy complet, 6 images galerie locales (picsum) |
+| 2026-08-02 | QA Playwright : hero pixelisé→net OK, slider auto OK, zoom pinné OK, 0 erreur console, 0 overflow. Build prod OK |
