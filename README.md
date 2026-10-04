@@ -78,3 +78,7 @@ Pour déployer votre application, vous pouvez utiliser Vercel, une plateforme cl
 ## Licence 📜
 
 Ce projet est sous licence MIT. Pour plus d'informations, consultez le fichier `LICENSE`.
+
+---
+
+Créé par [Amine Affif](https://amineaffif.com), développeur full-stack à Paris.
